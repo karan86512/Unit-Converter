@@ -1,0 +1,441 @@
+/* =========================================
+   ARTICLES PAGE
+========================================= */
+
+.articles-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 120px 24px 100px;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(109, 93, 252, .12),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(70, 190, 255, .10),
+            transparent 35%
+        ),
+        #f7f8fc;
+}
+
+
+.articles-hero-inner {
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.articles-label,
+.small-label {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.6px;
+
+    color: #6d5dfc;
+}
+
+
+.articles-hero h1 {
+    margin: 0;
+
+    font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    font-size:
+        clamp(42px, 7vw, 78px);
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+    color: #161625;
+}
+
+
+.articles-hero h1 span {
+    color: #6d5dfc;
+}
+
+
+.articles-hero p {
+    max-width: 650px;
+
+    margin: 25px auto 0;
+
+    font-size: 17px;
+
+    line-height: 1.75;
+
+    color: #707080;
+}
+
+
+
+/* =========================================
+   ARTICLES SECTION
+========================================= */
+
+.articles-section {
+    padding: 100px 24px;
+
+    background: #ffffff;
+}
+
+
+.articles-container {
+    max-width: 1180px;
+
+    margin: auto;
+}
+
+
+.articles-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 40px;
+
+    margin-bottom: 45px;
+}
+
+
+.articles-heading h2 {
+    margin: 0;
+
+    font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    font-size: 38px;
+
+    letter-spacing: -1.5px;
+
+    color: #171725;
+}
+
+
+.articles-heading p {
+    max-width: 430px;
+
+    margin: 0;
+
+    color: #777784;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================================
+   ARTICLE GRID
+========================================= */
+
+.articles-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+
+.article-list-card {
+    display: flex;
+
+    gap: 22px;
+
+    padding: 28px;
+
+    border-radius: 24px;
+
+    border: 1px solid
+        rgba(30,30,60,.08);
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fafaff
+        );
+
+    text-decoration: none;
+
+    box-shadow:
+        0 10px 40px
+        rgba(30,30,60,.045);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+
+.article-list-card:hover {
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(109,93,252,.25);
+
+    box-shadow:
+        0 25px 55px
+        rgba(30,30,60,.10);
+}
+
+
+
+/* =========================================
+   ARTICLE ICON
+========================================= */
+
+.article-icon {
+    flex-shrink: 0;
+
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f0efff,
+            #ffffff
+        );
+
+    border: 1px solid
+        rgba(109,93,252,.12);
+
+    font-size: 27px;
+
+    transition:
+        transform .35s ease;
+}
+
+
+.article-list-card:hover
+.article-icon {
+    transform:
+        rotate(-5deg)
+        scale(1.07);
+}
+
+
+
+/* =========================================
+   ARTICLE INFO
+========================================= */
+
+.article-info {
+    flex: 1;
+}
+
+
+.article-category {
+    display: inline-block;
+
+    margin-bottom: 9px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+    color: #7164ec;
+}
+
+
+.article-info h3 {
+    margin: 0;
+
+    font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    font-size: 19px;
+
+    line-height: 1.4;
+
+    letter-spacing: -.4px;
+
+    color: #181825;
+}
+
+
+.article-info p {
+    margin: 10px 0 18px;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    color: #777784;
+}
+
+
+
+/* =========================================
+   META
+========================================= */
+
+.article-meta {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-top: 15px;
+
+    border-top: 1px solid
+        rgba(30,30,60,.07);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #92929d;
+}
+
+
+.article-meta span:last-child {
+    color: #6d5dfc;
+
+    transition:
+        transform .3s ease;
+}
+
+
+.article-list-card:hover
+.article-meta span:last-child {
+    transform: translateX(4px);
+}
+
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .articles-hero {
+        padding: 85px 18px 70px;
+    }
+
+
+    .articles-hero h1 {
+        font-size: 43px;
+
+        letter-spacing: -2px;
+    }
+
+
+    .articles-hero p {
+        font-size: 14px;
+    }
+
+
+    .articles-section {
+        padding: 70px 18px;
+    }
+
+
+    .articles-heading {
+        display: block;
+    }
+
+
+    .articles-heading h2 {
+        font-size: 31px;
+    }
+
+
+    .articles-heading p {
+        margin-top: 12px;
+    }
+
+
+    .article-list-card {
+        padding: 22px;
+
+        gap: 16px;
+
+        border-radius: 20px;
+    }
+
+
+    .article-icon {
+        width: 50px;
+        height: 50px;
+
+        border-radius: 14px;
+
+        font-size: 22px;
+    }
+
+
+    .article-info h3 {
+        font-size: 17px;
+    }
+
+
+    .article-info p {
+        font-size: 12px;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+
+    .article-list-card {
+        display: block;
+    }
+
+
+    .article-icon {
+        margin-bottom: 18px;
+    }
+
+}

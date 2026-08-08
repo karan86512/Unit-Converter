@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Popular unit conversions with fast and accurate online conversion tools."
+    >
+
+    <title>Popular Conversions | Convertly</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- Background -->
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <a href="index.html" class="brand">
+
+            <div class="brand-mark">
+
+                <span></span>
+                <span></span>
+
+            </div>
+
+            Convertly
+
+        </a>
+
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#tools">
+                Tools
+            </a>
+
+            <a
+                href="popular-conversions.html"
+                class="active"
+            >
+                Popular
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <button
+                class="icon-button"
+                id="themeToggle"
+                title="Toggle dark mode"
+            >
+                ☾
+            </button>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-badge">
+
+                <span class="pulse-dot"></span>
+
+                Most searched conversions
+
+            </div>
+
+
+            <h1>
+
+                Popular
+                <span>Conversions</span>
+
+            </h1>
+
+
+            <p>
+
+                Quickly find the most commonly used
+                unit conversions. Simple, accurate and
+                completely free.
+
+            </p>
+
+
+            <!-- SEARCH -->
+
+            <div class="hero-search">
+
+                <span class="search-icon">
+                    ⌕
+                </span>
+
+                <input
+                    type="search"
+                    id="conversionSearch"
+                    placeholder="Search a conversion..."
+                    autocomplete="off"
+                >
+
+                <kbd>
+                    Ctrl K
+                </kbd>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- POPULAR CONVERSIONS -->
+
+        <section
+            class="popular-section"
+            id="popular"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        QUICK ACCESS
+                    </span>
+
+                    <h2>
+                        Popular Conversions
+                    </h2>
+
+                </div>
+
+                <span
+                    class="tool-count"
+                    id="conversionCount"
+                >
+                    24 conversions
+                </span>
+
+            </div>
+
+
+            <div
+                class="popular-grid"
+                id="conversionGrid"
+            >
+
+
+                <!-- LENGTH -->
+
+                <button
+                    class="quick-card"
+                    data-search="km miles"
+                    data-category="length"
+                >
+
+                    <span>
+                        Kilometers → Miles
+                    </span>
+
+                    <small>
+                        Convert km to mi
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="miles km"
+                    data-category="length"
+                >
+
+                    <span>
+                        Miles → Kilometers
+                    </span>
+
+                    <small>
+                        Convert mi to km
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="feet meters"
+                    data-category="length"
+                >
+
+                    <span>
+                        Feet → Meters
+                    </span>
+
+                    <small>
+                        Convert ft to m
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="inches cm"
+                    data-category="length"
+                >
+
+                    <span>
+                        Inches → Centimeters
+                    </span>
+
+                    <small>
+                        Convert in to cm
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+
+                <!-- WEIGHT -->
+
+                <button
+                    class="quick-card"
+                    data-search="kg pounds"
+                    data-category="weight"
+                >
+
+                    <span>
+                        Kilograms → Pounds
+                    </span>
+
+                    <small>
+                        Convert kg to lb
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="pounds kg"
+                    data-category="weight"
+                >
+
+                    <span>
+                        Pounds → Kilograms
+                    </span>
+
+                    <small>
+                        Convert lb to kg
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="grams kg"
+                    data-category="weight"
+                >
+
+                    <span>
+                        Grams → Kilograms
+                    </span>
+
+                    <small>
+                        Convert g to kg
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="ounces grams"
+                    data-category="weight"
+                >
+
+                    <span>
+                        Ounces → Grams
+                    </span>
+
+                    <small>
+                        Convert oz to g
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+
+                <!-- TEMPERATURE -->
+
+                <button
+                    class="quick-card"
+                    data-search="celsius fahrenheit"
+                    data-category="temperature"
+                >
+
+                    <span>
+                        Celsius → Fahrenheit
+                    </span>
+
+                    <small>
+                        Convert °C to °F
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="fahrenheit celsius"
+                    data-category="temperature"
+                >
+
+                    <span>
+                        Fahrenheit → Celsius
+                    </span>
+
+                    <small>
+                        Convert °F to °C
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="celsius kelvin"
+                    data-category="temperature"
+                >
+
+                    <span>
+                        Celsius → Kelvin
+                    </span>
+
+                    <small>
+                        Convert °C to K
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="kelvin celsius"
+                    data-category="temperature"
+                >
+
+                    <span>
+                        Kelvin → Celsius
+                    </span>
+
+                    <small>
+                        Convert K to °C
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+
+                <!-- AREA -->
+
+                <button
+                    class="quick-card"
+                    data-search="square meter square feet"
+                    data-category="area"
+                >
+
+                    <span>
+                        Square Meters → Square Feet
+                    </span>
+
+                    <small>
+                        Convert m² to ft²
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="square feet square meter"
+                    data-category="area"
+                >
+
+                    <span>
+                        Square Feet → Square Meters
+                    </span>
+
+                    <small>
+                        Convert ft² to m²
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="acres square meter"
+                    data-category="area"
+                >
+
+                    <span>
+                        Acres → Square Meters
+                    </span>
+
+                    <small>
+                        Convert acres to m²
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="hectare acres"
+                    data-category="area"
+                >
+
+                    <span>
+                        Hectares → Acres
+                    </span>
+
+                    <small>
+                        Convert hectares to acres
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+
+                <!-- VOLUME -->
+
+                <button
+                    class="quick-card"
+                    data-search="liters gallons"
+                    data-category="volume"
+                >
+
+                    <span>
+                        Liters → Gallons
+                    </span>
+
+                    <small>
+                        Convert L to gal
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="gallons liters"
+                    data-category="volume"
+                >
+
+                    <span>
+                        Gallons → Liters
+                    </span>
+
+                    <small>
+                        Convert gal to L
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="milliliters liters"
+                    data-category="volume"
+                >
+
+                    <span>
+                        Milliliters → Liters
+                    </span>
+
+                    <small>
+                        Convert ml to L
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="cups milliliters"
+                    data-category="volume"
+                >
+
+                    <span>
+                        Cups → Milliliters
+                    </span>
+
+                    <small>
+                        Convert cups to ml
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+
+                <!-- SPEED -->
+
+                <button
+                    class="quick-card"
+                    data-search="kmh mph"
+                    data-category="speed"
+                >
+
+                    <span>
+                        km/h → mph
+                    </span>
+
+                    <small>
+                        Convert km/h to mph
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-search="mph kmh"
+                    data-category="speed"
+                >
+
+                    <span>
+                        mph → km/h
+                    </span>
+
+                    <small>
+                        Convert mph to km/h
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+
+            </div>
+
+
+            <!-- EMPTY -->
+
+            <div
+                class="empty-state"
+                id="conversionEmpty"
+                hidden
+            >
+
+                <div class="empty-icon">
+                    ⌕
+                </div>
+
+                <h3>
+                    No conversions found
+                </h3>
+
+                <p>
+                    Try searching for another conversion.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- INFO -->
+
+        <section class="about-section">
+
+            <div class="about-card">
+
+                <div>
+
+                    <span class="eyebrow">
+                        CONVERTLY
+                    </span>
+
+                    <h2>
+                        Convert anything,
+                        <span>instantly.</span>
+                    </h2>
+
+                </div>
+
+
+                <p>
+
+                    Convertly provides fast and accurate
+                    online conversion tools for everyday
+                    calculations. From length and weight
+                    to temperature, speed and data,
+                    everything is just a click away.
+
+                </p>
+
+
+                <div class="stats">
+
+                    <div>
+
+                        <strong>12+</strong>
+
+                        <span>
+                            Converter Tools
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>100+</strong>
+
+                        <span>
+                            Units
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>Free</strong>
+
+                        <span>
+                            Always
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="footer-top">
+
+
+            <div class="footer-column footer-brand-column">
+
+                <a
+                    href="index.html"
+                    class="footer-brand"
+                >
+
+                    <div class="brand-mark small">
+
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                    Convertly
+
+                </a>
+
+
+                <p class="footer-description">
+
+                    Fast, accurate and free online
+                    unit conversion tools for everyone.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>Tools</h3>
+
+                <a href="index.html#tools">
+                    Length Converter
+                </a>
+
+                <a href="index.html#tools">
+                    Weight Converter
+                </a>
+
+                <a href="index.html#tools">
+                    Temperature Converter
+                </a>
+
+                <a href="index.html#tools">
+                    Area Converter
+                </a>
+
+                <a href="index.html#tools">
+                    Volume Converter
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>Converters</h3>
+
+                <a href="index.html#tools">
+                    Time Converter
+                </a>
+
+                <a href="index.html#tools">
+                    Speed Converter
+                </a>
+
+                <a href="index.html#tools">
+                    Data Converter
+                </a>
+
+                <a href="index.html#tools">
+                    Pressure Converter
+                </a>
+
+                <a href="index.html#tools">
+                    Energy Converter
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>Resources</h3>
+
+                <a
+                    href="popular-conversions.html"
+                >
+                    Popular Conversions
+                </a>
+
+                <a href="index.html#about">
+                    About Convertly
+                </a>
+
+                <a href="#">
+                    Conversion Guide
+                </a>
+
+                <a href="#">
+                    FAQ
+                </a>
+
+                <a href="#">
+                    Contact us
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>Legal</h3>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+                <a href="#">
+                    Cookie Policy
+                </a>
+
+                <a href="#">
+                    Disclaimer
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-divider"></div>
+
+
+
+        <div class="footer-bottom">
+
+            <button class="language-select">
+
+                🌐
+
+                English
+
+                ⌄
+
+            </button>
+
+
+            <div class="footer-social">
+
+                <a href="#">𝕏</a>
+
+                <a href="#">f</a>
+
+                <a href="#">in</a>
+
+                <a href="#">◎</a>
+
+                <a href="#">♪</a>
+
+                <a href="#">●</a>
+
+            </div>
+
+
+            <div class="footer-copyright">
+
+                © 2026 Convertly ·
+                Free Online Unit Converter
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/popular-conversions.js"></script>
+
+</body>
+
+</html>

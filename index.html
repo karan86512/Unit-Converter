@@ -1,0 +1,1239 @@
+ <!DOCTYPE html>
+ 
+ <head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Convertly is a fast, accurate and free online unit converter for length, weight, temperature, area, volume, time, speed, data, pressure, energy and more."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="theme-color"
+        content="#f7f8fc"
+    >
+
+    <meta
+        name="author"
+        content="Convertly"
+    >
+
+    <title>
+        Convertly — Free Online Unit Converter
+    </title>
+
+
+    <!-- Canonical URL -->
+    <link
+        rel="canonical"
+        href="https://YOUR-DOMAIN.com/"
+    >
+
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="favicon.png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="favicon.png"
+    >
+
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Open Graph / Social Sharing -->
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:title"
+        content="Convertly — Free Online Unit Converter"
+    >
+
+    <meta
+        property="og:description"
+        content="Fast, accurate and free online unit conversion tools for length, weight, temperature, area, volume, time, speed and more."
+    >
+
+    <meta
+        property="og:url"
+        content="https://YOUR-DOMAIN.com/"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Convertly"
+    >
+
+    <meta
+        property="og:image"
+        content="https://YOUR-DOMAIN.com/og-image.png"
+    >
+
+
+    <!-- Twitter / X -->
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Convertly — Free Online Unit Converter"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Fast, accurate and free online unit conversion tools."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://YOUR-DOMAIN.com/og-image.png"
+    >
+
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =========================
+         BACKGROUND EFFECTS
+    ========================== -->
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
+
+        <!-- Logo -->
+        <a href="#" class="brand">
+
+            <span class="brand-mark">
+                <span></span>
+                <span></span>
+            </span>
+
+            <span>Convertly</span>
+
+        </a>
+
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+
+            <a href="#tools" class="active">
+                Unit Converters
+            </a>
+
+            <a href="#popular">
+                Popular
+            </a>
+
+             <a
+            href="popular-conversions.html"
+            class="active"
+        >
+            Articles
+        </a>
+
+            <a href="#about">
+                About
+            </a>
+
+        </nav>
+
+
+        <!-- Header Buttons -->
+        <div class="header-actions">
+
+            <button
+                class="icon-button"
+                id="themeToggle"
+                aria-label="Toggle dark mode"
+                title="Toggle theme"
+            >
+                ☾
+            </button>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="hero-badge">
+
+                <span class="pulse-dot"></span>
+
+                Fast, accurate & free
+
+            </div>
+
+
+            <h1>
+
+                Every conversion you need,
+                <br>
+
+                <span>in one place.</span>
+
+            </h1>
+
+
+            <p>
+
+                Convert length, weight, temperature, speed, area,
+                volume, time, data and more — quickly and accurately.
+
+            </p>
+
+
+            <!-- Search -->
+            <div class="hero-search">
+
+                <span class="search-icon">
+                    ⌕
+                </span>
+
+                <input
+                    id="searchInput"
+                    type="search"
+                    placeholder="Search a converter, e.g. length, kg, Celsius..."
+                    autocomplete="off"
+                >
+
+                <kbd>
+                    Ctrl K
+                </kbd>
+
+            </div>
+
+
+            <!-- Categories -->
+            <div
+                class="category-pills"
+                id="categoryPills"
+            >
+
+                <button
+                    class="pill active"
+                    data-category="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="pill"
+                    data-category="length"
+                >
+                    Length
+                </button>
+
+                <button
+                    class="pill"
+                    data-category="weight"
+                >
+                    Weight
+                </button>
+
+                <button
+                    class="pill"
+                    data-category="temperature"
+                >
+                    Temperature
+                </button>
+
+                <button
+                    class="pill"
+                    data-category="area"
+                >
+                    Area
+                </button>
+
+                <button
+                    class="pill"
+                    data-category="volume"
+                >
+                    Volume
+                </button>
+
+                <button
+                    class="pill"
+                    data-category="time"
+                >
+                    Time
+                </button>
+
+                <button
+                    class="pill"
+                    data-category="speed"
+                >
+                    Speed
+                </button>
+
+                <button
+                    class="pill"
+                    data-category="data"
+                >
+                    Data
+                </button>
+
+                <button
+                    class="pill"
+                    data-category="pressure"
+                >
+                    Pressure
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             TOOLS SECTION
+        ========================== -->
+
+        <section
+            class="tools-section"
+            id="tools"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        EXPLORE TOOLS
+                    </span>
+
+                    <h2>
+                        Convert anything, effortlessly.
+                    </h2>
+
+                </div>
+
+
+                <span
+                    class="tool-count"
+                    id="toolCount"
+                >
+                    12 tools
+                </span>
+
+            </div>
+
+
+            <!-- Converter cards will be added using JavaScript -->
+
+            <div
+                class="tool-grid"
+                id="toolGrid"
+            >
+            </div>
+
+
+            <!-- Empty Search Result -->
+
+            <div
+                class="empty-state"
+                id="emptyState"
+                hidden
+            >
+
+                <div class="empty-icon">
+                    ⌕
+                </div>
+
+                <h3>
+                    No converter found
+                </h3>
+
+                <p>
+                    Try another category or search term.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             POPULAR SECTION
+        ========================== -->
+
+        <section
+            class="popular-section"
+            id="popular"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        QUICK ACCESS
+                    </span>
+
+                    <h2>
+                        Popular conversions
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="popular-grid">
+
+
+                <button
+                    class="quick-card"
+                    data-open="length"
+                >
+
+                    <span>
+                        km → mi
+                    </span>
+
+                    <small>
+                        Kilometers to miles
+                    </small>
+
+                    <b>
+                        →
+                    </b>
+
+                </button>
+
+
+
+                <button
+                    class="quick-card"
+                    data-open="weight"
+                >
+
+                    <span>
+                        kg → lb
+                    </span>
+
+                    <small>
+                        Kilograms to pounds
+                    </small>
+
+                    <b>
+                        →
+                    </b>
+
+                </button>
+
+
+
+                <button
+                    class="quick-card"
+                    data-open="temperature"
+                >
+
+                    <span>
+                        °C → °F
+                    </span>
+
+                    <small>
+                        Celsius to Fahrenheit
+                    </small>
+
+                    <b>
+                        →
+                    </b>
+
+                </button>
+
+
+
+                <button
+                    class="quick-card"
+                    data-open="data"
+                >
+
+                    <span>
+                        GB → MB
+                    </span>
+
+                    <small>
+                        Gigabytes to megabytes
+                    </small>
+
+                    <b>
+                        →
+                    </b>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ABOUT SECTION
+        ========================== -->
+
+        <section
+            class="about-section"
+            id="about"
+        >
+
+            <div class="about-card">
+
+                <div>
+
+                    <span class="eyebrow">
+                        WHY CONVERTLY
+                    </span>
+
+                    <h2>
+
+                        Simple tools.
+                        <span>Serious accuracy.</span>
+
+                    </h2>
+
+                </div>
+
+
+                <p>
+
+                    Designed for students, developers,
+                    professionals and everyday calculations.
+                    No clutter, no complicated setup —
+                    just enter a value and get your answer instantly.
+
+                </p>
+
+
+                <div class="stats">
+
+                    <div>
+
+                        <strong>
+                            12+
+                        </strong>
+
+                        <span>
+                            Converters
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            100%
+                        </strong>
+
+                        <span>
+                            Free to use
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            ⚡
+                        </strong>
+
+                        <span>
+                            Instant results
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================================
+     BLOG / RESOURCES SECTION
+================================ -->
+
+<section class="home-blog-section" id="blog">
+
+    <div class="home-blog-container">
+
+        <div class="home-blog-heading">
+
+            <div>
+                <span class="section-label">
+                    RESOURCES
+                </span>
+
+                <h2>
+                    Learn & Convert
+                    <span>with confidence.</span>
+                </h2>
+
+                <p>
+                    Simple guides, conversion tips and useful
+                    explanations to help you understand units better.
+                </p>
+            </div>
+
+
+            <a
+                href="popular-conversions.html"
+                class="view-all-blog"
+            >
+                View all articles
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <!-- BLOG CARDS -->
+
+        <div class="home-blog-grid">
+
+
+            <!-- BLOG 1 -->
+
+            <a
+                href="metric-vs-imperial-units.html"
+                class="home-blog-card"
+            >
+
+                <div class="blog-card-icon">
+                    ⚖️
+                </div>
+
+                <div class="blog-card-content">
+
+                    <span class="blog-card-category">
+                        UNIT GUIDE
+                    </span>
+
+                    <h3>
+                        Metric vs Imperial Units:
+                        What's the Difference?
+                    </h3>
+
+                    <p>
+                        Understand the difference between
+                        Metric and Imperial measurement systems.
+                    </p>
+
+                    <div class="blog-card-footer">
+
+                        <span>
+                            6 min read
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- BLOG 2 -->
+
+            <a
+                href="kilograms-to-pounds.html"
+                class="home-blog-card"
+            >
+
+                <div class="blog-card-icon">
+                    ⚖️
+                </div>
+
+                <div class="blog-card-content">
+
+                    <span class="blog-card-category">
+                        WEIGHT GUIDE
+                    </span>
+
+                    <h3>
+                        Kilograms to Pounds:
+                        Formula & Examples
+                    </h3>
+
+                    <p>
+                        Learn how to convert kilograms to
+                        pounds with simple formulas and tables.
+                    </p>
+
+                    <div class="blog-card-footer">
+
+                        <span>
+                            8 min read
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- BLOG 3 -->
+
+            <a
+                href="miles-to-kilometers.html"
+                class="home-blog-card"
+            >
+
+                <div class="blog-card-icon">
+                    🗺️
+                </div>
+
+                <div class="blog-card-content">
+
+                    <span class="blog-card-category">
+                        DISTANCE GUIDE
+                    </span>
+
+                    <h3>
+                        Miles to Kilometers:
+                        Formula & Table
+                    </h3>
+
+                    <p>
+                        Quickly understand miles and kilometers
+                        with formulas and practical examples.
+                    </p>
+
+                    <div class="blog-card-footer">
+
+                        <span>
+                            8 min read
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- BLOG 4 -->
+
+            <a
+                href="celsius-to-fahrenheit.html"
+                class="home-blog-card"
+            >
+
+                <div class="blog-card-icon">
+                    🌡️
+                </div>
+
+                <div class="blog-card-content">
+
+                    <span class="blog-card-category">
+                        TEMPERATURE
+                    </span>
+
+                    <h3>
+                        Celsius to Fahrenheit:
+                        Formula & Examples
+                    </h3>
+
+                    <p>
+                        Learn the easiest way to convert
+                        Celsius and Fahrenheit.
+                    </p>
+
+                    <div class="blog-card-footer">
+
+                        <span>
+                            7 min read
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- BLOG 5 -->
+
+            <a
+                href="feet-to-meters.html"
+                class="home-blog-card"
+            >
+
+                <div class="blog-card-icon">
+                    📏
+                </div>
+
+                <div class="blog-card-content">
+
+                    <span class="blog-card-category">
+                        LENGTH GUIDE
+                    </span>
+
+                    <h3>
+                        Feet to Meters:
+                        Complete Conversion Guide
+                    </h3>
+
+                    <p>
+                        Convert feet to meters and meters
+                        to feet using simple formulas.
+                    </p>
+
+                    <div class="blog-card-footer">
+
+                        <span>
+                            6 min read
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+
+    <footer class="site-footer">
+
+    <div class="footer-top">
+
+        <!-- BRAND -->
+        <div class="footer-column footer-brand-column">
+
+            <div class="footer-brand">
+
+                <div class="brand-mark small">
+                    <span></span>
+                    <span></span>
+                </div>
+
+                Convertly
+
+            </div>
+
+            <p class="footer-description">
+                Fast, accurate and free online
+                unit conversion tools for everyone.
+            </p>
+
+        </div>
+
+
+        <!-- TOOLS -->
+        <div class="footer-column">
+
+            <h3>Tools</h3>
+
+            <a href="#tools">Length Converter</a>
+            <a href="#tools">Weight Converter</a>
+            <a href="#tools">Temperature Converter</a>
+            <a href="#tools">Area Converter</a>
+            <a href="#tools">Volume Converter</a>
+
+        </div>
+
+
+        <!-- CONVERTERS -->
+        <div class="footer-column">
+
+            <h3>Converters</h3>
+
+            <a href="#tools">Time Converter</a>
+            <a href="#tools">Speed Converter</a>
+            <a href="#tools">Data Converter</a>
+            <a href="#tools">Pressure Converter</a>
+            <a href="#tools">Energy Converter</a>
+
+        </div>
+
+
+        <!-- RESOURCES -->
+        <div class="footer-column">
+
+            <h3>Resources</h3>
+
+            <a href="popular-conversions.html">Popular Conversions</a>
+            <a href="about.html">About Convertly</a>
+            <a href="conversion-guide.html">Conversion Guide</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact us</a>
+
+        </div>
+
+
+        <!-- LEGAL -->
+        <div class="footer-column">
+
+            <h3>Legal</h3>
+
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="cookie-policy.html">Cookie Policy</a>
+            <a href="#">Disclaimer</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- DIVIDER -->
+
+    <div class="footer-divider"></div>
+
+
+    <!-- BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <!-- LANGUAGE -->
+
+        <button class="language-select">
+
+            <span>🌐</span>
+
+            English
+
+            <span>⌄</span>
+
+        </button>
+
+
+        <!-- SOCIAL -->
+
+        <div class="footer-social">
+
+            <a href="#" aria-label="X">
+                𝕏
+            </a>
+
+            <a href="#" aria-label="Facebook">
+                f
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+                in
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                ◎
+            </a>
+
+            <a href="#" aria-label="TikTok">
+                ♪
+            </a>
+
+            <a href="#" aria-label="Reddit">
+                ●
+            </a>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-copyright">
+
+            © 2026 Convertly · Free Online Unit Converter
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+    <!-- =========================
+         CONVERTER MODAL
+    ========================== -->
+
+    <div
+        class="modal-backdrop"
+        id="modalBackdrop"
+        hidden
+    >
+
+        <div
+            class="converter-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+        >
+
+
+            <!-- Close -->
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+
+            <!-- Modal Header -->
+
+            <div class="modal-top">
+
+                <div
+                    class="modal-icon"
+                    id="modalIcon"
+                >
+                    📏
+                </div>
+
+
+                <div>
+
+                    <span
+                        class="eyebrow"
+                        id="modalCategory"
+                    >
+                        LENGTH
+                    </span>
+
+                    <h2 id="modalTitle">
+                        Length Converter
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Converter -->
+
+            <div class="converter-box">
+
+
+                <!-- From -->
+
+                <div class="field">
+
+                    <label for="fromValue">
+                        From
+                    </label>
+
+                    <div class="input-row">
+
+                        <input
+                            id="fromValue"
+                            type="number"
+                            inputmode="decimal"
+                            value="1"
+                            step="any"
+                        >
+
+                        <select id="fromUnit">
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Swap -->
+
+                <button
+                    class="swap-button"
+                    id="swapButton"
+                    aria-label="Swap units"
+                >
+                    ⇅
+                </button>
+
+
+
+                <!-- Result -->
+
+                <div class="field">
+
+                    <label for="toValue">
+                        Result
+                    </label>
+
+                    <div class="input-row result-row">
+
+                        <input
+                            id="toValue"
+                            type="text"
+                            readonly
+                        >
+
+                        <select id="toUnit">
+                        </select>
+
+                        <button
+                            id="copyButton"
+                            class="copy-button"
+                            title="Copy result"
+                        >
+                            Copy
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Formula -->
+
+            <div
+                class="formula"
+                id="formulaText"
+            >
+                1 kilometer = 0.621371 miles
+            </div>
+
+
+
+            <!-- Popular units -->
+
+            <div
+                class="popular-units"
+                id="popularUnits"
+            >
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         TOAST
+    ========================== -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+        Copied to clipboard
+    </div>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

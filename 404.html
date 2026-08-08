@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="robots"
+        content="noindex, nofollow"
+    >
+
+    <meta
+        name="theme-color"
+        content="#f7f8fc"
+    >
+
+    <title>404 — Page Not Found | Convertly</title>
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+<style>
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    color: #171725;
+
+    background: #f7f8fc;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.page {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+}
+
+
+.background-glow {
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    filter: blur(80px);
+
+    opacity: .45;
+
+    pointer-events: none;
+
+}
+
+
+.glow-one {
+
+    top: -220px;
+    left: -180px;
+
+    background:
+        rgba(109, 93, 252, .18);
+
+    animation:
+        floatOne 8s ease-in-out infinite;
+
+}
+
+
+.glow-two {
+
+    right: -200px;
+    bottom: -250px;
+
+    background:
+        rgba(85, 190, 255, .15);
+
+    animation:
+        floatTwo 10s ease-in-out infinite;
+
+}
+
+
+@keyframes floatOne {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(40px, 30px);
+    }
+
+}
+
+
+@keyframes floatTwo {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-35px, -25px);
+    }
+
+}
+
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+
+    position: relative;
+
+    z-index: 10;
+
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding:
+        22px 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #171725;
+
+    text-decoration: none;
+
+    font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    letter-spacing: -.6px;
+
+}
+
+
+.brand-mark {
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 3px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6d5dfc,
+            #8f83ff
+        );
+
+    box-shadow:
+        0 8px 20px
+        rgba(109,93,252,.22);
+
+}
+
+
+.brand-mark span {
+
+    width: 4px;
+
+    border-radius: 5px;
+
+    background: white;
+
+}
+
+
+.brand-mark span:first-child {
+
+    height: 11px;
+
+}
+
+
+.brand-mark span:last-child {
+
+    height: 17px;
+
+}
+
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.error-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding:
+        70px 20px 100px;
+
+}
+
+
+.error-inner {
+
+    max-width: 700px;
+
+    width: 100%;
+
+}
+
+
+
+/* =========================================
+   404 NUMBER
+========================================= */
+
+.error-number {
+
+    position: relative;
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    font-size:
+        clamp(120px, 22vw, 230px);
+
+    line-height: .85;
+
+    font-weight: 800;
+
+    letter-spacing: -12px;
+
+    color: #171725;
+
+    animation:
+        numberFloat 4s ease-in-out infinite;
+
+}
+
+
+.error-number::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 10%;
+
+    right: 0;
+
+    bottom: -15px;
+
+    height: 25px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(109,93,252,.12);
+
+    filter: blur(15px);
+
+    z-index: -1;
+
+}
+
+
+@keyframes numberFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.error-content h1 {
+
+    margin-top: 20px;
+
+    font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    font-size:
+        clamp(28px, 5vw, 46px);
+
+    line-height: 1.15;
+
+    letter-spacing: -1.5px;
+
+    color: #181825;
+
+}
+
+
+.error-content h1 span {
+
+    color: #6d5dfc;
+
+}
+
+
+.error-description {
+
+    max-width: 530px;
+
+    margin: 18px auto 0;
+
+    color: #737380;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.error-actions {
+
+    margin-top: 32px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.btn {
+
+    min-height: 48px;
+
+    padding:
+        0 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+
+}
+
+
+.btn-primary {
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6d5dfc,
+            #8173ff
+        );
+
+    box-shadow:
+        0 12px 28px
+        rgba(109,93,252,.22);
+
+}
+
+
+.btn-primary:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 18px 35px
+        rgba(109,93,252,.30);
+
+}
+
+
+.btn-secondary {
+
+    color: #30303d;
+
+    background:
+        rgba(255,255,255,.8);
+
+    border:
+        1px solid
+        rgba(30,30,60,.10);
+
+}
+
+
+.btn-secondary:hover {
+
+    transform:
+        translateY(-3px);
+
+    background: white;
+
+    box-shadow:
+        0 12px 28px
+        rgba(30,30,60,.08);
+
+}
+
+
+
+/* =========================================
+   QUICK LINKS
+========================================= */
+
+.quick-links {
+
+    margin-top: 48px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+
+.quick-links span {
+
+    color: #9999a5;
+
+    font-size: 12px;
+
+}
+
+
+.quick-links a {
+
+    color: #6d5dfc;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.quick-links a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.error-footer {
+
+    position: relative;
+
+    z-index: 3;
+
+    padding:
+        20px;
+
+    text-align: center;
+
+    border-top:
+        1px solid
+        rgba(30,30,60,.06);
+
+    color: #90909b;
+
+    font-size: 12px;
+
+}
+
+
+.error-footer a {
+
+    color: #6d5dfc;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .site-header {
+
+        padding:
+            18px;
+
+    }
+
+
+    .brand {
+
+        font-size: 19px;
+
+    }
+
+
+    .brand-mark {
+
+        width: 30px;
+        height: 30px;
+
+    }
+
+
+    .error-content {
+
+        padding:
+            50px 18px 70px;
+
+    }
+
+
+    .error-number {
+
+        font-size:
+            clamp(105px, 31vw, 170px);
+
+        letter-spacing: -7px;
+
+    }
+
+
+    .error-content h1 {
+
+        font-size: 29px;
+
+        letter-spacing: -1px;
+
+    }
+
+
+    .error-description {
+
+        font-size: 14px;
+
+        line-height: 1.65;
+
+    }
+
+
+    .error-actions {
+
+        flex-direction: column;
+
+        width: 100%;
+
+    }
+
+
+    .btn {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+
+    .quick-links {
+
+        margin-top: 35px;
+
+        gap: 8px;
+
+    }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation: none !important;
+
+        transition: none !important;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+    <!-- Background -->
+
+    <div
+        class="background-glow glow-one"
+    ></div>
+
+    <div
+        class="background-glow glow-two"
+    ></div>
+
+
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="site-header">
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <div class="brand-mark">
+
+                <span></span>
+                <span></span>
+
+            </div>
+
+            Convertly
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =====================================
+         ERROR CONTENT
+    ====================================== -->
+
+    <main class="error-content">
+
+        <div class="error-inner">
+
+
+            <div
+                class="error-number"
+                aria-label="404"
+            >
+                404
+            </div>
+
+
+            <h1>
+
+                Oops! This page
+                <span>got converted.</span>
+
+            </h1>
+
+
+            <p class="error-description">
+
+                The page you're looking for doesn't exist,
+                may have been moved, or the URL might be
+                incorrect. Don't worry — let's get you back
+                to converting.
+
+            </p>
+
+
+
+            <!-- Buttons -->
+
+            <div class="error-actions">
+
+                <a
+                    href="index.html"
+                    class="btn btn-primary"
+                >
+
+                    ← Back to Homepage
+
+                </a>
+
+
+                <a
+                    href="popular-conversions.html"
+                    class="btn btn-secondary"
+                >
+
+                    Explore Articles →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- Quick Links -->
+
+            <div class="quick-links">
+
+                <span>
+                    Quick links:
+                </span>
+
+                <a href="index.html#tools">
+                    Converters
+                </a>
+
+                <span>•</span>
+
+                <a href="popular-conversions.html">
+                    Articles
+                </a>
+
+                <span>•</span>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <span>•</span>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="error-footer">
+
+        © 2026 Convertly ·
+        Free Online Unit Converter
+
+        <br>
+
+        <a href="index.html">
+            Return to Convertly
+        </a>
+
+    </footer>
+
+
+</div>
+
+
+</body>
+
+</html>

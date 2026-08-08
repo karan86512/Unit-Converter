@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <urlset
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -9,101 +9,80 @@
     ================================= -->
 
     <url>
-        <loc>https://YOUR-DOMAIN.com/</loc>
+        <loc>https://unit-converter.karanmorehub.com/</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-
     <url>
-        <loc>https://YOUR-DOMAIN.com/popular-conversions.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/popular-conversions.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
-
     <url>
-        <loc>https://YOUR-DOMAIN.com/about.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/about.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
-
     <url>
-        <loc>https://YOUR-DOMAIN.com/conversion-guide.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/conversion-guide.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-
     <url>
-        <loc>https://YOUR-DOMAIN.com/faq.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/faq.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
-
     <url>
-        <loc>https://YOUR-DOMAIN.com/contact.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/contact.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
-
 
 
     <!-- ================================
          BLOG ARTICLES
     ================================= -->
 
-    <!-- Blog 1 -->
-
     <url>
-        <loc>https://YOUR-DOMAIN.com/metric-vs-imperial-units.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/metric-vs-imperial-units.html</loc>
         <lastmod>2026-08-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-
-    <!-- Blog 2 -->
-
     <url>
-        <loc>https://YOUR-DOMAIN.com/kilograms-to-pounds.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/kilograms-to-pounds.html</loc>
         <lastmod>2026-08-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-
-    <!-- Blog 3 -->
-
     <url>
-        <loc>https://YOUR-DOMAIN.com/miles-to-kilometers.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/miles-to-kilometers.html</loc>
         <lastmod>2026-08-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-
-    <!-- Blog 4 -->
-
     <url>
-        <loc>https://YOUR-DOMAIN.com/celsius-to-fahrenheit.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/celsius-to-fahrenheit.html</loc>
         <lastmod>2026-08-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-
-    <!-- Blog 5 -->
-
     <url>
-        <loc>https://YOUR-DOMAIN.com/feet-to-meters.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/feet-to-meters.html</loc>
         <lastmod>2026-08-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
 
 
     <!-- ================================
@@ -111,28 +90,25 @@
     ================================= -->
 
     <url>
-        <loc>https://YOUR-DOMAIN.com/privacy-policy.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/privacy-policy.html</loc>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
 
-
     <url>
-        <loc>https://YOUR-DOMAIN.com/terms.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/terms.html</loc>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
 
-
     <url>
-        <loc>https://YOUR-DOMAIN.com/cookie-policy.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/cookie-policy.html</loc>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
 
-
     <url>
-        <loc>https://YOUR-DOMAIN.com/disclaimer.html</loc>
+        <loc>https://unit-converter.karanmorehub.com/disclaimer.html</loc>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
